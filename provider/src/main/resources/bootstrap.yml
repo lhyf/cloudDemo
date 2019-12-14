@@ -1,5 +1,5 @@
 server:
-  address: 8081
+  port: 8081
 
 spring:
   application:
@@ -7,9 +7,10 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 192.168.136.128:8848
+        namespace: public
+        server-addr: 192.168.137.1:8848
         file-extension: yaml
       discovery:
-        server-addr: 192.168.136.128:8848
-
+        namespace: public
+        server-addr: 192.168.137.1:8848
 

@@ -1,10 +1,11 @@
 server:
-  address: 8083
+  port: 8082
 
 spring:
   application:
     name: consumer
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: 192.168.136.128:8848
+  cloud:
+    nacos:
+      discovery:
+        namespace: public
+        server-addr: 192.168.137.1:8848

@@ -23,32 +23,26 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
         <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
-        <nacos.client.version>0.9.0.RELEASE</nacos.client.version>
+        <nacos.client.version>0.2.2.RELEASE</nacos.client.version>
+        <lombok.version>1.18.2</lombok.version>
     </properties>
 
+    <!-- 所有子模块继承 -->
     <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -70,11 +64,10 @@
             </dependency>
 
 
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version>
-<!--                <scope>test</scope>-->
                 <exclusions>
                     <exclusion>
                         <groupId>org.junit.vintage</groupId>
