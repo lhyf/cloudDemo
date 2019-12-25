@@ -4,7 +4,13 @@ server:
 spring:
   application:
     name: provider
-
-  profiles:
-    active: test
+  cloud:
+    nacos:
+      config:
+        namespace: public
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+      discovery:
+        namespace: public
+        server-addr: 127.0.0.1:8848
 
