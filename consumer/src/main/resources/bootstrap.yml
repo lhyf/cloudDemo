@@ -4,8 +4,5 @@ server:
 spring:
   application:
     name: consumer
-  cloud:
-    nacos:
-      discovery:
-        namespace: public
-        server-addr: 192.168.137.1:8848
+  profiles:
+    active: dev

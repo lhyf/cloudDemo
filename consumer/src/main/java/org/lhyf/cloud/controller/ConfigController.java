@@ -15,6 +15,6 @@ public class ConfigController {
 
     @RequestMapping("/get")
     public String get() {
-        return "provider:" + useLocalCache;
+        return "consumer:" + useLocalCache;
     }
 }
