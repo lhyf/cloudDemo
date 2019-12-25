@@ -114,7 +114,6 @@ public class RestTemplateTestController {
                 .encode();
         URI uri = uriComponents.toUri();
         String body = restTemplate.getForObject(uri, String.class);
-
         log.info(body);
         return body;
     }
