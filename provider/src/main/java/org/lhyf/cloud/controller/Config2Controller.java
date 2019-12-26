@@ -12,11 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/config2")
 public class Config2Controller {
-    @Value("${config.flag:default}")
-    private String flag;
+    //    @Value("${spring.redis.port:default}")
+    @Value("${useLocalCache:false}")
+    private Boolean flag;
 
     @RequestMapping("/get")
-    public String get() {
+    public Boolean get() {
         return flag;
     }
 }

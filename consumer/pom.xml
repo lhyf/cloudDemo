@@ -11,10 +11,6 @@
 
     <artifactId>consumer</artifactId>
 
-    <properties>
-        <nacos.client.version>0.9.0.RELEASE</nacos.client.version>
-    </properties>
-
     <dependencies>
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.cloud</groupId>-->
