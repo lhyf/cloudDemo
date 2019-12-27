@@ -2,10 +2,12 @@ spring:
   cloud:
     nacos:
       config:
-        namespace: b84dbcdc-f430-4bb2-91f3-cd25eedaefd4
-        server-addr: 192.168.137.1:8848
-        file-extension: yml
+        namespace: 2d5193c9-4b61-453e-8eae-e0fae3b516e1
+        group: PROVIDER_GROUP
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
       discovery:
-        namespace: b84dbcdc-f430-4bb2-91f3-cd25eedaefd4
-        server-addr: 192.168.137.1:8848
-
+        namespace: 2d5193c9-4b61-453e-8eae-e0fae3b516e1
+        server-addr: 127.0.0.1:8848
+server:
+  port: 8082

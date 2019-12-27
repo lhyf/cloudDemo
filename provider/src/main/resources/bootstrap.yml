@@ -1,17 +1,6 @@
-server:
-  port: 8081
-
 spring:
   application:
     name: provider
-  cloud:
-    nacos:
-      config:
-#        namespace: public
-        namespace: 2572cfa6-38d4-4a72-812b-3347fe50aa98
-        server-addr: 127.0.0.1:8848
-        file-extension: yaml
-      discovery:
-#        namespace: public
-        namespace: 2572cfa6-38d4-4a72-812b-3347fe50aa98
-        server-addr: 127.0.0.1:8848
+  profiles:
+    active: dev
+

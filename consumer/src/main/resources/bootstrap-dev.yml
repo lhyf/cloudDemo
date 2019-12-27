@@ -1,11 +1,12 @@
 spring:
   cloud:
     nacos:
-      config:
-        namespace: 1d332506-3253-4192-985d-70e08d2eee78
-        server-addr: 192.168.137.1:8848
-        file-extension: yml
       discovery:
-        namespace: 1d332506-3253-4192-985d-70e08d2eee78
-        server-addr: 192.168.137.1:8848
+        namespace: 2572cfa6-38d4-4a72-812b-3347fe50aa98
+        server-addr: 127.0.0.1:8848
+#      config:
+#        namespace: 2572cfa6-38d4-4a72-812b-3347fe50aa98
+#        server-addr: 127.0.0.1:8848
+#        file-extension: yaml
+#        group: CONSUMER_GROUP
 
